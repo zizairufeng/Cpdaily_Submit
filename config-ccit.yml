@@ -41,7 +41,7 @@ cpdaily:
 
     - default:
         type: 2
-        title: 是否在校
+        title: 目前是否在校
         value: 否
     - default:
         type: 2
