@@ -1,0 +1,101 @@
+#登陆相关配置
+login:
+  #开放的模拟登陆api服务器地址
+  api: "http://www.zimo.wiki:8080/wisedu-unified-login-api-v1.0/api/login"
+#用户组配置
+users:
+  #单个用户配置
+  - user:
+      #username 学号或者工号
+      username: '19091230215'
+      #password 密码
+      password: 'ccit152618'
+      #address 地址，定位信息
+      address: 中国江苏省连云港市东海县黄川镇时湖村
+      #email 接受通知消息的邮箱
+      email: 2089719204@qq.com
+      #school 学校全称
+      school: 常州信息职业技术学院
+        #多用户配置，将下面的注释去掉即可，如果有表单内容有图片，不建议使用多用户配置
+#  - user:
+#      #username 学号或者工号
+#      username: 161105024
+#      #password 密码
+#      password: 161105024
+#      #address 地址
+#      address: 中国四川省成都市金牛区一环路北1段-129号-附9号
+#      #email 接受通知消息的邮箱
+#      email: 461009747@qq.com
+#      school: 宜宾学院
+#今日校园相关配置
+cpdaily:
+  #表单组默认选项配置
+  defaults:
+    #表单默认选项配置，按顺序，注意，只有标必填项的才处理
+    
+    - default:
+        #表单项类型，对应今日校园接口返回的fieldType字段，1代表文本，2代表单选，3代表多选，4代表图片
+        title: 目前所在地区
+        type: 1
+        value: 江苏省/连云港市/东海县
+    - default:
+        type: 2
+        title: 本人是否接触过新型冠状病毒患者
+        value: 否
+    - default:
+        type: 2
+        title: 是否在校
+        value: 否
+    - default:
+        type: 2
+        title: 是否有呼吸道感染症状
+        value: 否
+    - default:
+        type: 2
+        title: 是否发热（体温大于等于37.3度）
+        value: 否
+    - default:
+        type: 2
+        title: 近14天是否与敏感/疑似/确诊人员/无症状感染症接触过
+        value: 否
+    - default:
+        type: 2
+        title: 是否为疑似/确诊人员/无症状感染症
+        value: 否
+    - default:
+        type: 2
+        title: 是否与"近14天内入境的人员"接触过
+        value: 否
+    - default:
+        type: 1
+        title: 如果有接触，请详细说明情况（没有接触的不填）
+        value: 
+    - default:
+        type: 2
+        title: 近14天内是否接触过发热或有呼吸道疾病人员
+        value: 否
+    - default:
+        type: 2
+        title: 近14天内是否有境外旅居史
+        value: 否
+    - default:
+        type: 2
+        title: 近14天内是否在疫情中高风险地区停留过，或与从疫情中高风险地区返乡人员有密切 接触
+        value: 否
+    - default:
+        type: 1
+        title: 其他异常情况
+        value:
+    - default:
+        type: 2
+        title: 请再次确认，以上信息是否全部真实有效，不存在任何隐瞒与不实的情况。
+        value: 是
+Info:
+  ServerChan: # 填写Server酱的SCKEY
+  Qsmg: # 填写Qsmg酱的SCKEY
+  Email:
+    enable: true
+    server: smtp.exmail.qq.com # 填写邮件的smtp服务器
+    port: 465 # 填写邮件服务器的端口号
+    account: '' # 邮件服务器登录用户名
+    password: '' # 邮件服务器登录密码
