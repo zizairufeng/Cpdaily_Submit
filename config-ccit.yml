@@ -22,11 +22,6 @@ cpdaily:
         #表单项类型，对应今日校园接口返回的fieldType字段，1代表文本，2代表单选，3代表多选，4代表图片
         title: 目前所在地区
         type: 1
-        value: 江苏省/连云港市/东海县
-    - default:
-        type: 2
-        title: 本人是否接触过新型冠状病毒患者
-        value: 否
     - default:
         type: 2
         title: 是否在校
