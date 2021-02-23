@@ -342,9 +342,9 @@ def main_handler(user, yml_file):
 
 
 # 配合Windows计划任务等使用
-if __name__ == '__main__':
-    user = os.environ
-    config_file=sys.argv[1]
-    print(main_handler(user, config_file))
+#if __name__ == '__main__':
+#    user = os.environ
+#    config_file=sys.argv[1]
+#    print(main_handler(user, config_file))
     # for user in config['users']:
     #     log(getCpdailyApis(user))
